@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    padding: 25px 20px; /* Increased padding for taller navbar */
+    background-color: #0A2463 !important;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section {
+    padding-top: 80px; /* Account for fixed navbar */
+  }
+  
+  /* Product Card Styles */
+  .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Add a hover effect */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover; /* Ensure images fit well */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #0A2463;
+    color: white;
+    padding: 20px 0;
+  }
