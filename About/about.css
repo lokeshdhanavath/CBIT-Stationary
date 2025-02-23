@@ -18,10 +18,9 @@
   .nav-link {
     font-size: 1.1rem;
     margin-right: 15px;
-    color: white; /* Default link color */
+    
     transition: color 0.3s ease; /* Smooth transition for hover effect */
   }
-  
   .nav-link:hover {
     color: #f5f9fd; /* Highlight color on hover */
   }
@@ -197,3 +196,27 @@
   .why-choose-section .card-text {
     font-size: 1rem;
   }
+  .footer {
+    background-color: #222; /* Darker background for a sleek look */
+    padding: 20px 0;
+  }
+  
+  .footer a {
+    color: #bbb; /* Light gray for better contrast */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #fff; /* White on hover for better visibility */
+  }
+  
+  .footer .social-media a {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer .social-media a:hover {
+    color: #007bff; /* Bootstrap primary blue */
+  }
+  

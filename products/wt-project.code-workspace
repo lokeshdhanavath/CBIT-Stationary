@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wt-project",
+		"liveServer.settings.port": 5501
+	}
+}

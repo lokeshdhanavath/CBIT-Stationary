@@ -9,16 +9,16 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="products.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <!-- Logo and Brand Name -->
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="CBIT Stationary Logo" width="40" height="40" class="d-inline-block align-text-top">
-        CBIT Stationary
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="CBIT Stationary Logo" width="40" height="40" class="me-2">
+        <span class="fw-bold">CBIT Stationary</span>
       </a>
 
       <!-- Navbar Toggler for Mobile -->
@@ -30,26 +30,26 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index/index.html">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+            <a class="nav-link active" style="text-decoration: none;" href="../products/products.html">Products</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="cart.html">Cart</a>
+            <a class="nav-link" href="../cart/cart.html">Cart</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" aria-current="page" href="../about/about.html" style="text-decoration: none;">About</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="../contact/contact.html">Contact Us</a>
           </li>
           <!-- Sign In / Sign Up Buttons -->
           <li class="nav-item mx-2">
-            <a class="btn btn-primary" href="login.html">Sign In</a>
+            <a class="btn btn-primary" href="../login/login.html">Sign In</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="btn btn-outline-light" href="signup.html">Create Account</a>
+            <a class="btn btn-outline-light" href="../createAccount/signup.html">Create Account</a>
           </li>
         </ul>
       </div>
@@ -57,13 +57,33 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center" style="background: url('products-hero.webp') center/cover no-repeat; height: 40vh; position: relative;">
-    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
-    <div class="container position-relative">
+  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center" 
+  style="background: url('pro-hero.avif') center/cover no-repeat; height: 60vh; position: relative;">
+  
+  <!-- Dark Overlay -->
+  <div class="overlay" 
+      style="position: absolute; top: 0; left: 0; width: 100%;  background: rgba(0, 0, 0, 0.5);">
+  </div>
+
+  <div class="container position-relative">
       <h1 class="display-4 fw-bold">Our Products</h1>
-      <p class="lead">Explore our wide range of high-quality stationary products.</p>
-    </div>
-  </section>
+      <p class="lead">Explore our wide range of high-quality stationery products.</p>
+
+      <!-- Search Bar with Icon Button -->
+      <div class="search-bar" style="max-width: 400px; margin: 0 auto; position: relative;">
+          <input type="text" class="form-control" placeholder="Search Your Essentials" 
+              style="padding-right: 50px; height: 45px; border-radius: 25px;">
+          
+          <button class="btn btn-primary" 
+              style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); border-radius: 50%; width: 40px; height: 40px;">
+              <i class="fas fa-search"></i> <!-- Search Icon -->
+          </button>
+      </div>
+  </div>
+</section>
+
+<!-- Font Awesome (for search icon) -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
   <!-- Products Section -->
   <section class="products-section py-5">
@@ -72,7 +92,7 @@
         <!-- Product Card 1 -->
         <div class="col-md-4 mb-4">
           <div class="card shadow">
-            <img src="notebook.jpg" class="card-img-top" alt="Notebook">
+            <img src="../images/notebook1.webp" class="card-img-top" alt="Notebook">
             <div class="card-body">
               <h5 class="card-title">Notebook</h5>
               <p class="card-text">High-quality notebooks for all your notes.</p>
@@ -85,7 +105,7 @@
         <!-- Product Card 2 -->
         <div class="col-md-4 mb-4">
           <div class="card shadow">
-            <img src="pen.jpg" class="card-img-top" alt="Pen">
+            <img src="../images/pens1.jpg" class="card-img-top" alt="Pen">
             <div class="card-body">
               <h5 class="card-title">Pen</h5>
               <p class="card-text">Smooth-writing pens for every student.</p>
@@ -98,7 +118,7 @@
         <!-- Product Card 3 -->
         <div class="col-md-4 mb-4">
           <div class="card shadow">
-            <img src="marker.jpg" class="card-img-top" alt="Marker">
+            <img src="../images/markers.webp" class="card-img-top" alt="Marker">
             <div class="card-body">
               <h5 class="card-title">Marker</h5>
               <p class="card-text">Vivid markers for highlighting and drawing.</p>
@@ -108,18 +128,179 @@
           </div>
         </div>
 
-        <!-- Add more product cards as needed -->
+        <!-- Product Card 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/pencil.webp" class="card-img-top" alt="Pencil">
+            <div class="card-body">
+              <h5 class="card-title">Pencil</h5>
+              <p class="card-text">Durable pencils for sketching and writing.</p>
+              <p class="card-text"><strong>Price:</strong> ₹10</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/eraser.jpg" class="card-img-top" alt="Eraser">
+            <div class="card-body">
+              <h5 class="card-title">Eraser</h5>
+              <p class="card-text">Soft erasers for clean corrections.</p>
+              <p class="card-text"><strong>Price:</strong> ₹15</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/stapler.jpg" class="card-img-top" alt="Stapler">
+            <div class="card-body">
+              <h5 class="card-title">Stapler</h5>
+              <p class="card-text">Heavy-duty stapler for all your needs.</p>
+              <p class="card-text"><strong>Price:</strong> ₹200</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/glue.jpg" class="card-img-top" alt="Glue">
+            <div class="card-body">
+              <h5 class="card-title">Glue Stick</h5>
+              <p class="card-text">Non-toxic glue sticks for crafts and projects.</p>
+              <p class="card-text"><strong>Price:</strong> ₹30</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/ruler.webp" class="card-img-top" alt="Ruler">
+            <div class="card-body">
+              <h5 class="card-title">Ruler</h5>
+              <p class="card-text">Transparent ruler for precise measurements.</p>
+              <p class="card-text"><strong>Price:</strong> ₹25</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/calculator.jpg" class="card-img-top" alt="Calculator">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">Scientific calculator for students and professionals.</p>
+              <p class="card-text"><strong>Price:</strong> ₹500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/index.png" class="card-img-top" alt="Sticky Notes">
+            <div class="card-body">
+              <h5 class="card-title">CSE Index</h5>
+              <p class="card-text">Bridging Theory and Practice for Tomorrow’s Innovators!.</p>
+              <p class="card-text"><strong>Price:</strong> ₹23</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+<!-- Product Card 11 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow">
+    <img src="../images/index.png" class="card-img-top" alt="Highlighter">
+    <div class="card-body">
+      <h5 class="card-title">MECH Index</h5>
+      <p class="card-text">Bridging Theory and Practice for Tomorrow’s Innovators!.</p>
+      <p class="card-text"><strong>Price:</strong> ₹23</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- Product Card 12 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow">
+    <img src="../images/index.png" class="card-img-top" alt="Paper Clips">
+    <div class="card-body">
+      <h5 class="card-title">BIO Tech Index</h5>
+      <p class="card-text">Bridging Theory and Practice for Tomorrow’s Innovators!.</p>
+      <p class="card-text"><strong>Price:</strong> ₹23</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Product Card 10 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow">
+    <img src="../images/file.png" class="card-img-top"  alt="Sticky Notes">
+    <div class="card-body">
+      <h5 class="card-title">CBIT File</h5>
+      <p class="card-text">A File for Every File – Keep Your Records Safe and Accessible!</p>
+      <p class="card-text"><strong>Price:</strong> ₹30</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- Product Card 11 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow">
+    <img src="../images/stick-file-1000x1000.webp" class="card-img-top" alt="Highlighter">
+    <div class="card-body">
+      <h5 class="card-title">CBIT Stick File</h5>
+      <p class="card-text">Easy to Use, Hard to Lose – Your Go-To Stick File for Everyday Use!</p>
+      <p class="card-text"><strong>Price:</strong> ₹35</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- Product Card 12 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow">
+    <img src="../images/reocrd.png" class="card-img-top" alt="Paper Clips">
+    <div class="card-body">
+      <h5 class="card-title">Record Sheets Pack of (100)</h5>
+      <p class="card-text">Write It Down, Keep It Safe – Record Sheets You Can Count On!</p>
+      <p class="card-text"><strong>Price:</strong> ₹120</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
+
+
+  <!-- Floating Go to Cart Button -->
+<a href="../cart/cart.html" class="btn btn-danger position-fixed bottom-0 end-0 m-3" style="z-index: 1000;">
+  <i class="fas fa-shopping-cart"></i> Go to Cart
+</a>
 
   <!-- Footer -->
   <footer class="footer bg-dark text-white py-4 text-center">
     <div class="container">
       <p>&copy; 2025 CBIT Stationary. All rights reserved.</p>
       <p>
-        <a class="text-white" href="privacy-policy.html">Privacy Policy</a> | 
-        <a class="text-white" href="terms-of-service.html">Terms of Service</a>
+        <a class="text-white" href="../privacy.html">Privacy Policy</a> | 
+        <a class="text-white" href="../terms.html">Terms of Service</a>
       </p>
       <div>
         <a href="https://facebook.com/cbitstationary" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
